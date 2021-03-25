@@ -1,0 +1,6 @@
+utils/Log.class
+pageLocators/WelcomeScreenPageLocators.class
+utils/SeleniumDriver.class
+pageLocators/CreateAccountPageLocators.class
+pageActions/CreateAccountPageActions.class
+pageActions/WelcomeScreenPageActions.class

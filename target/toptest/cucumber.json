@@ -1,0 +1,250 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4006064912,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "CoinMarketCap site \"https://coinmarketcap.com/\" opens successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://coinmarketcap.com/",
+                  "offset": 20
+                }
+              ],
+              "location": "CoinmarketTestingStepDefs.coinmarketcap_site_opens_successfully(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4495847886,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Validate 100 rows of Cryptocurrencies are shown to user",
+        "description": "",
+        "id": "verify-sample-tests-for-home-and-login-screen;validate-100-rows-of-cryptocurrencies-are-shown-to-user",
+        "after": [
+          {
+            "result": {
+              "duration": 212899623,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 841115473,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User selects Show rows dropdown value to 100",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 41
+                }
+              ],
+              "location": "CoinmarketTestingStepDefs.user_selects_show_rows_dropdown_value(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5231736771,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify that 100 rows are displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100",
+                  "offset": 12
+                }
+              ],
+              "location": "CoinmarketTestingStepDefs.verify_the_number_of_rows_shown(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@AllTests"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5765978475,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "CoinMarketCap site \"https://coinmarketcap.com/\" opens successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://coinmarketcap.com/",
+                  "offset": 20
+                }
+              ],
+              "location": "CoinmarketTestingStepDefs.coinmarketcap_site_opens_successfully(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1116372280,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Validate filters on the home page shows correct results",
+        "description": "",
+        "id": "verify-sample-tests-for-home-and-login-screen;validate-filters-on-the-home-page-shows-correct-results",
+        "after": [
+          {
+            "result": {
+              "duration": 166107287,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 330616685,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User Clicks on Filters button",
+            "match": {
+              "location": "CoinmarketTestingStepDefs.user_clicks_on_filter_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7962737730,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Filter records by MarketCap 1000000000 - 10000000000 and Price 101 - 1000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1000000000",
+                  "offset": 28
+                },
+                {
+                  "val": "10000000000",
+                  "offset": 41
+                },
+                {
+                  "val": "101",
+                  "offset": 63
+                },
+                {
+                  "val": "1000",
+                  "offset": 69
+                }
+              ],
+              "location": "CoinmarketTestingStepDefs.filter_records_by_marketcap_and_price(long,long,int,int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6277451497,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Check records displayed on page are correct as MarketCap 1000000000 - 10000000000 and Price 101 - 1000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1000000000",
+                  "offset": 57
+                },
+                {
+                  "val": "10000000000",
+                  "offset": 70
+                },
+                {
+                  "val": "101",
+                  "offset": 92
+                },
+                {
+                  "val": "1000",
+                  "offset": 98
+                }
+              ],
+              "location": "CoinmarketTestingStepDefs.checkRecordsDisplayedOnPageAreCorrectAsMarketCapAndPrice(float,float,float,float)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@AllTests"
+          }
+        ]
+      }
+    ],
+    "name": "Verify sample tests for home and login screen",
+    "description": "",
+    "id": "verify-sample-tests-for-home-and-login-screen",
+    "keyword": "Feature",
+    "uri": "CoinmarketTesting.feature"
+  }
+]
